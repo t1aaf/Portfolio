@@ -36,14 +36,15 @@ export function Experience() {
         <h2 className="text-3xl font-bold mb-12 text-center text-gray-800">My Journey</h2>
         <div className="flex flex-col md:flex-row gap-8">
           <div className="md:w-1/2">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5 }}
-              className="h-full flex items-center justify-center"
-            >
-              <Image src={logo} alt="Image" width={"500"} height={"500"} className="rounded-2xl"/>
-            </motion.div>
+            <div className="h-full flex items-center justify-center">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+              >
+                <Image src={logo} alt="Image" width={"500"} height={"500"} className="rounded-2xl"/>
+              </motion.div>
+            </div>
           </div>
           <div className="md:w-1/2 space-y-6">
             {experiences.map((experience, index) => (

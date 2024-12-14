@@ -23,13 +23,14 @@ export function AboutMe() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="space-y-6"
           >
-            <h1 className="text-4xl md:text-5xl font-bold text-white">Tariq Hassan Tiaaf</h1>
-            <h2 className="text-xl md:text-2xl text-gray-200">Full Stack Developer</h2>
-            <p className="text-lg text-gray-300 leading-relaxed">
+            <div className="space-y-6">
+              <h1 className="text-4xl md:text-5xl font-bold text-white">Tariq Hassan Tiaaf</h1>
+              <h2 className="text-xl md:text-2xl text-gray-200">Full Stack Developer</h2>
+              <p className="text-lg text-gray-300 leading-relaxed">
               Passionate about creating seamless web experiences and solving complex problems through elegant code. With 2 years of hands-on experience, I specialize in crafting robust and scalable web applications.
-            </p>
+              </p>
+            </div>
             <div className="flex flex-wrap gap-4">
               <Link href="#experience">
                 <Button 

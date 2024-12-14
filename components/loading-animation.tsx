@@ -5,14 +5,28 @@ import { motion } from "framer-motion"
 export function LoadingAnimation() {
   return (
     <motion.div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-blue-200 via-purple-100 to-pink-200"
+      style={{
+        position: 'fixed',
+        inset: 0,
+        zIndex: 50,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        background: 'linear-gradient(to bottom right, rgb(191 219 254), rgb(243 232 255), rgb(251 207 232))'
+      }}
       initial={{ opacity: 1 }}
       animate={{ opacity: 0 }}
       transition={{ duration: 0.5, delay: 2.5 }}
       onAnimationComplete={() => document.body.style.overflow = 'auto'}
     >
       <motion.div
-        className="text-4xl font-bold text-gray-800 relative text-center"
+        style={{
+          fontSize: '2.25rem',
+          fontWeight: 'bold', 
+          color: 'rgb(31 41 55)',
+          position: 'relative',
+          textAlign: 'center'
+        }}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -21,7 +35,13 @@ export function LoadingAnimation() {
         {[...Array(20)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute h-2 w-2 bg-blue-500 rounded-full"
+            style={{
+              position: 'absolute',
+              height: '0.5rem',
+              width: '0.5rem',
+              backgroundColor: 'rgb(59 130 246)',
+              borderRadius: '9999px'
+            }}
             initial={{ 
               x: Math.random() * 200 - 100,
               y: Math.random() * 200 - 100,
