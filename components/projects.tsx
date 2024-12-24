@@ -6,6 +6,7 @@ import { Card, CardDescription, CardHeader, CardTitle, CardFooter } from "@/comp
 import { Button } from "@/components/ui/button"
 import photoGallery from "@/public/photo-gallery.png"
 import ProxyTeach from "@/public/proxyTeach.png"
+import listify from "@/public/listify.png"
 
 const projects = [
   {
@@ -22,6 +23,13 @@ const projects = [
     demoLink: "https://proxy-teach.vercel.app/",
     codeLink: "https://github.com/Signature-Tech/ProxyTeach",
   },
+  {
+    title: "Listify",
+    description: "Stay organized and boost your productivity with our Todo web app!",
+    image: listify,
+    demoLink: "https://listlify.vercel.app/",
+    codeLink: "https://github.com/Signature-Tech/Listlify",
+  },
 ]
 
 export function Projects() {
@@ -37,7 +45,7 @@ export function Projects() {
     <section id="projects" className="min-h-screen p-6 md:p-12 flex flex-col justify-center bg-gradient-to-br from-blue-200 via-purple-100 to-pink-200">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold mb-12 text-center text-gray-800">Featured Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -49,9 +57,7 @@ export function Projects() {
                 <Image
                   src={project.image}
                   alt={project.title}
-                  width={300}
-                  height={200}
-                  className="w-full h-48 object-cover rounded-t-lg"
+                  className="object-cover rounded-t-lg"
                 />
                 <CardHeader>
                   <CardTitle className="text-gray-800">{project.title}</CardTitle>
