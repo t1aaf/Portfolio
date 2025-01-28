@@ -18,7 +18,7 @@ export function Footer() {
             <h3 className="text-2xl font-bold text-white">Tariq Hassan Tiaaf</h3>
             <p className="text-gray-400">Full Stack Developer</p>
             <div className="flex space-x-6">
-              <a href="https://github.com/Signature-Tech" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+              <a href="https://github.com/t1aaf" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                 <Github className="h-6 w-6" />
               </a>
               <a href="https://www.instagram.com/_t1aaf/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">

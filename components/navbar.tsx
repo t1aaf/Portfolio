@@ -21,7 +21,7 @@ export function Navbar() {
   ]
 
   const socialItems = [
-    { href: "https://github.com/Signature-Tech", icon: Github },
+    { href: "https://github.com/t1aaf", icon: Github },
     { href: "https://www.instagram.com/_t1aaf/", icon: Instagram },
   ]
 
