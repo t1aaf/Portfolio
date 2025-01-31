@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import photoGallery from "@/public/photo-gallery.png"
 import ProxyTeach from "@/public/proxyTeach.png"
 import listify from "@/public/listify.png"
+import quotastic from "@/public/quotastic.png"
 
 const projects = [
   {
@@ -14,21 +15,28 @@ const projects = [
     description: "A sleek and immersive photo gallery website",
     image: photoGallery,
     demoLink: "https://photo-gallery-pink-three.vercel.app/",
-    codeLink: "https://github.com/Signature-Tech/photo-gallery",
+    codeLink: "https://github.com/t1aaf/photo-gallery",
   },
   {
     title: "ProxyTeach",
     description: "A school management website.",
     image: ProxyTeach,
     demoLink: "https://proxy-teach.vercel.app/",
-    codeLink: "https://github.com/Signature-Tech/ProxyTeach",
+    codeLink: "https://github.com/t1aaf/ProxyTeach",
   },
   {
     title: "Listify",
     description: "Stay organized and boost your productivity with our Todo web app!",
     image: listify,
     demoLink: "https://listlify.vercel.app/",
-    codeLink: "https://github.com/Signature-Tech/Listlify",
+    codeLink: "https://github.com/t1aaf/Listlify",
+  },
+  {
+    title: "Quotastic",
+    description: "",
+    image: quotastic,
+    demoLink: "https://quotastic.vercel.app/",
+    codeLink: "https://github.com/t1aaf/Quotastic",
   },
 ]
 
